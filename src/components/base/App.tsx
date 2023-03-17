@@ -15,7 +15,11 @@ import Container from './container/Container';
 
 const router= createBrowserRouter([
   {
-    path:"/",
+    path: "/",
+    element: <MainView props={<Login/>}/>
+  },
+  {
+    path: '/login',
     element: <MainView props={<Login/>}/>
   },
   {

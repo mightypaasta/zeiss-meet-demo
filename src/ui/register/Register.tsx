@@ -4,6 +4,7 @@ LICENSE file.
 *********************************************************************************************************************************************************/
 import { useState } from "react";
 import "./register.css";
+import { useNavigate } from "react-router-dom";
 
 interface IState {
   username: string;
@@ -12,6 +13,9 @@ interface IState {
 }
 
 const Register: React.FC = () => {
+
+  let navigator=useNavigate();
+
   const [state, setState] = useState<IState>({
     username: "",
     email: "",
@@ -59,6 +63,9 @@ const Register: React.FC = () => {
     if (state.password == "") {
       setShowPasswordPrompt(true);
       setPasswordInputToggle(true);
+    }
+    if(state.username.length>0 && state.email.length>0 && state.password.length>0){
+      navigator('/login');
     }
   };
 

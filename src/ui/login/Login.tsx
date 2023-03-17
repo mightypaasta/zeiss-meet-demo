@@ -4,8 +4,7 @@ LICENSE file.
 *********************************************************************************************************************************************************/
 import React, { useState } from "react";
 import "./login.css";
-import { useNavigate } from "react-router-dom";
-import { stat } from "fs";
+import { useNavigate , Navigate} from "react-router-dom";
 
 interface IState {
   email: string;
@@ -14,6 +13,9 @@ interface IState {
 
 const Login: React.FC = () => {
   let navigator = useNavigate();
+  window.onpopstate = () => {
+    navigator('/login/id');
+  }
 
   const [state, setState] = useState<IState>({
     email: "",
@@ -52,12 +54,12 @@ const Login: React.FC = () => {
       setPasswordInputToggle(true);
     }
     if (state.email.length > 0 && state.password.length > 0) {
-      navigator("/login/id");
+      navigator('/login/id');
     }
   };
 
   const registerClickHandler = () => {
-    navigator("/register");
+    navigator('/register')
   };
 
   return (

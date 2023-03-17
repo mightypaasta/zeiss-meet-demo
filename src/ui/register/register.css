@@ -95,6 +95,10 @@ hr {
     width: 30%;
 }
 
+.register-input:focus{
+    outline: none;
+}
+
 .register-form-btn {
     margin-top: 50px;
     margin-left: 50px;
@@ -117,6 +121,9 @@ hr {
   width: 30%;
 }
 
+.register-username-input-toggle:focus {
+    outline: none;
+}
 
 .register-email-input-toggle {
   display: block;
@@ -128,6 +135,10 @@ hr {
   width: 30%;
 }
 
+.register-email-input-toggle:focus {
+    outline: none;
+}
+
 .register-password-input-toggle {
   display: block;
   margin-top: 15px;
@@ -136,4 +147,8 @@ hr {
   border: 0px solid red;
   border-bottom-width: 2px;
   width: 30%;
+}
+
+.register-password-input-toggle:focus {
+    outline: none;
 }
