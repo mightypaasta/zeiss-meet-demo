@@ -1,4 +1,5 @@
-.App {
+
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +36,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+*/
+
+*{
+  font-family: 'Segoe UI';
+  font-style: normal;
 }

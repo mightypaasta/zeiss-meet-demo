@@ -1,0 +1,23 @@
+.Sidebar-container{
+    display: grid;
+    background-color: #262E36;
+    width: 3.5vw;
+    height:88vh;
+    margin-top: auto;
+    /* flex-direction: column; */
+    /* align-items: flex-start;
+    padding: 0px; */
+    
+    /* flex: 1; */
+    /* how much margin should i add */
+}
+
+.meet_logo{
+    position: relative;
+    align-self: top;
+}
+
+.expand_logo{
+    position: relative;
+    margin-top: auto;
+}

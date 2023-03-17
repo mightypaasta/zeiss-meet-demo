@@ -1,0 +1,26 @@
+.container{
+    position: absolute;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dce4f0;
+}
+
+#header_component{
+    width:100%;
+    z-index: 500;
+    margin:0 auto;
+}
+
+#sidebar_component{
+    z-index: 499;
+    position: absolute;
+}
+
+#container_component{
+    padding-top: 1vh;
+    z-index: 400;
+    position:absolute;
+    margin-left: 90px;
+    width: 93.6vw;
+}
