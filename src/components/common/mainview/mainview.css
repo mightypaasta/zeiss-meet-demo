@@ -7,14 +7,17 @@
 }
 
 #header_component{
-    width:100%;
+    width:100vw;
     z-index: 500;
     margin:0 auto;
+    position: sticky;
+    top: 0;
 }
 
 #sidebar_component{
     z-index: 499;
-    position: absolute;
+    position: fixed;
+    left: 0;
 }
 
 #container_component{

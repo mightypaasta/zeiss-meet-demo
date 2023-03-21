@@ -1,7 +1,15 @@
 import UpcomingMeetings from '../../../ui/dashboard/upocomingevent/UpcomingMeetings'
 import "./container.css"
+import { useNavigate } from 'react-router-dom';
 
 const Container = () => {
+
+    let navigator= useNavigate();
+
+    window.onpopstate = () => {
+      navigator("/login/id");
+    };
+
   return (
     <div className="container_box">
 

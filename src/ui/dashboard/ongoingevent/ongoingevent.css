@@ -1,0 +1,56 @@
+.ongoing_meetings{
+    display: flex ;
+    flex-direction: column;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    padding: 0;
+    width: 90vw;
+    height:auto;
+    box-sizing: border-box;
+    background-color:#FFFF;
+    /*
+    text-align: center;
+    align-items: center; */
+
+}
+
+.heading{
+    color: black;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 350;
+    /* color: white; */
+}
+
+hr{
+    /* position: relative; */
+    color: black;
+    border: 1px solid #EDF2F7;
+    width: 95%;  
+}
+
+.meetings{
+    
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-right: auto;
+    margin-left:auto;
+}
+
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    height: 340px;
+    width: 1500px;
+    margin-bottom: 10px;
+    overflow-x:auto;
+    overflow-y: hidden;
+    justify-content:space-between;
+}
+
+#ongoing_meeting_title{
+    margin-left: 41.469px;
+    font-weight: 350;
+    line-height: 36px;
+    font-size: 24px;
+}

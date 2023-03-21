@@ -8,7 +8,7 @@
 }
 
 .register-header {
-    width: 100%;
+    width: 100vw;
     /* height: 64px; */
     /* background-color: white; */
     color: #141E8C
@@ -16,16 +16,16 @@
 
 .zeiss_logo {
     position: relative;
-    left: 1.25%;
+    left: 1.25vw;
     right: 97.08%;
     top: 25%;
     bottom: 25%;
 }
 
-h1 {
+/* h1 {
     display: inline;
     margin-right: 50vw
-}
+} */
 
 .Profile {
     /* background-color: #8495b0; */

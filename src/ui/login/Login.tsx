@@ -13,9 +13,6 @@ interface IState {
 
 const Login: React.FC = () => {
   let navigator = useNavigate();
-  window.onpopstate = () => {
-    navigator('/login/id');
-  }
 
   const [state, setState] = useState<IState>({
     email: "",
