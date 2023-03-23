@@ -16,6 +16,8 @@ import MeetList from "../../ui/Meet list/MeetList";
 import CreateMeetingPopUp from "../../ui/CreateMeetingPopUp/CreateMeetingPopUp";
 import OnGoingEvents from "../../ui/dashboard/ongoingevent/ongoingevent";
 import Dashboard from "../../ui/dashboard/Dashboard";
+// import Example from "../../ui/Modal/modal";
+
 
 const router = createBrowserRouter([
   {
@@ -31,7 +33,7 @@ const router = createBrowserRouter([
     element: <MainView props={<Register />} />,
   },
   {
-    path: "/login/id",
+    path: "/dashboard",
     element: <MainView props={<Container />} />,
   },
   {

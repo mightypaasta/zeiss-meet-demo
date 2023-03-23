@@ -7,7 +7,7 @@ const Container = () => {
     let navigator= useNavigate();
 
     window.onpopstate = () => {
-      navigator("/login/id");
+      navigator("/dashboard");
     };
 
   return (

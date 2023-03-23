@@ -24,6 +24,7 @@ const initialState: UserInfoState = {
         email: '',
         password: ''
     },
+    isLoginSuccess:false
 };
 
 export default function userInfoReducer(state: UserInfoState = initialState, action: actions.ACTIONS): UserInfoState {
@@ -39,6 +40,7 @@ export default function userInfoReducer(state: UserInfoState = initialState, act
                 userData: action.userData,
             };
         case actions.GET_LOGIN_FAILURE:
+            // console.log("action login failue is working correctly")
             return {
                 ...state,
                 isLoginFailed: true,

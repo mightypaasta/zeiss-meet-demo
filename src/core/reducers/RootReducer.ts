@@ -6,7 +6,7 @@
 import { combineReducers } from 'redux';
 import loginReducer, { UserInfoState } from './LoginReducer';
 
-export interface IReduxStore{
+export interface IRootState{
     login:UserInfoState
 }
 

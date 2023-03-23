@@ -27,6 +27,7 @@ function* onLogin(action: any) {
         // yield put(actionCreators.getLoginSuccess(userInfo));
         break;
       case 401:
+        yield put(actionCreators.getLoginFailure("Invalid User"))
         console.log("Invalid login");
         break;
       case 500:
