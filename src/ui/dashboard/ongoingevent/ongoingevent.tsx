@@ -16,7 +16,7 @@ const OnGoingMeetings = () => {
         <div className="line">
           <hr />
         </div>
-        <div className="meetings grid-container">
+        <div className="meetings-container grid-container">
           <div className="grid-item">
             <EventCard />
           </div>
@@ -36,7 +36,7 @@ const OnGoingMeetings = () => {
             <EventCard />
           </div>
         </div>
-        <div className="heading">
+        {/* <div className="heading">
           <p id="ongoing_meeting_title">Upcoming Meetings </p>
         </div>
         <div className="line">
@@ -55,7 +55,7 @@ const OnGoingMeetings = () => {
           <div className="grid-item">
             <EventCard />
           </div>
-        </div>
+        </div> */}
       </div>
     );
 }

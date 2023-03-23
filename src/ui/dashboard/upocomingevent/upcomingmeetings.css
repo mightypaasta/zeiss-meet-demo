@@ -1,4 +1,4 @@
-.upcoming_meetings{
+.upcoming_meetings_nolist{
     display: flex ;
     flex-direction: column;
     margin-left: 1vw;
@@ -11,7 +11,21 @@
     /*
     text-align: center;
     align-items: center; */
+}
 
+.upcoming_meetings_list{
+    display: flex ;
+    flex-direction: column;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    padding: 0;
+    width: 90vw;
+    height:auto;
+    box-sizing: border-box;
+    background-color:#FFFF;
+    /*
+    text-align: center;
+    align-items: center; */
 }
 
 .heading{
@@ -29,7 +43,7 @@ hr{
     width: 95%;  
 }
 
-.meetings{
+.meetings-container{
     
     padding-top: 3vh;
     display: flex;

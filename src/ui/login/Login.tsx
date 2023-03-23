@@ -5,16 +5,18 @@ LICENSE file.
 import React, { useState } from "react";
 import "./login.css";
 import { useNavigate , Navigate} from "react-router-dom";
-
-interface IState {
-  email: string;
-  password: string;
-}
+import { getLogin } from "../../core/actioncreators/LoginActionCreator";
+import UserData from "../../core/models/UserData";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import { UserInfoState } from "../../core/reducers/LoginReducer";
+import { IReduxStore } from "../../core/reducers/RootReducer";
 
 const Login: React.FC = () => {
   let navigator = useNavigate();
+  let dispatch = useDispatch();
 
-  const [state, setState] = useState<IState>({
+  const [state, setState] = useState<UserData>({
     email: "",
     password: "",
   });
@@ -51,13 +53,15 @@ const Login: React.FC = () => {
       setPasswordInputToggle(true);
     }
     if (state.email.length > 0 && state.password.length > 0) {
-      navigator('/login/id');
+      dispatch(getLogin(state))
+      navigator('/login');
     }
   };
 
   const registerClickHandler = () => {
     navigator('/register')
   };
+
 
   return (
     <div className="container_box">

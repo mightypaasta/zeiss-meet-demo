@@ -15,11 +15,12 @@ import Container from "./container/Container";
 import MeetList from "../../ui/Meet list/MeetList";
 import CreateMeetingPopUp from "../../ui/CreateMeetingPopUp/CreateMeetingPopUp";
 import OnGoingEvents from "../../ui/dashboard/ongoingevent/ongoingevent";
+import Dashboard from "../../ui/dashboard/Dashboard";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainView props={<OnGoingEvents />} />,
+    element: <MainView props={<Login />} />,
   },
   {
     path: "/login",

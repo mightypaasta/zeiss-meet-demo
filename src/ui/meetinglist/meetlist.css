@@ -1,0 +1,29 @@
+
+.meetings{
+    
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    /* margin-right: auto;
+    margin-left:auto; */
+}
+
+.meetings h4{
+    color: #A5B1C2;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 350;
+    margin-top: -1vh;
+    margin-right:auto ;
+    margin-left: auto;
+    width: 10vw;
+    justify-content: center;
+    text-align: center;
+}
+#logo{
+    /* position: relative; */
+    padding-right: 2vw;
+    margin-right:auto ;
+    margin-left: auto;
+}

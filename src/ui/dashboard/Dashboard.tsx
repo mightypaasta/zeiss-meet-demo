@@ -3,12 +3,16 @@ Copyright (c) 2023 Carl Zeiss Meditec AG All rights reserved.  * Use of this sou
 LICENSE file.
 *********************************************************************************************************************************************************/
 
+import OnGoingMeetings from "./ongoingevent/ongoingevent";
+import UpcomingMeetings from "./upocomingevent/UpcomingMeetings";
+
 
 
 function Dashboard() {
     return (
-        <div className="App">
-
+        <div className="Dashboard">
+            <OnGoingMeetings/>
+            <UpcomingMeetings/>
         </div>
     );
 }
