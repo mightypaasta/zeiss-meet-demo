@@ -5,6 +5,7 @@
  */
 import { combineReducers } from 'redux';
 import loginReducer, { UserInfoState } from './LoginReducer';
+import registerReducer from './RegisterReducer';
 
 export interface IRootState{
     login:UserInfoState
@@ -12,7 +13,7 @@ export interface IRootState{
 
 const rootReducer = combineReducers({
     login: loginReducer,
-
+    register: registerReducer
 });
 
 export type AppState = ReturnType<typeof rootReducer>;

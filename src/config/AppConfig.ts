@@ -10,6 +10,7 @@ console.log(httpProtocol, ' http protocol link');
 const env = {
   userInfoEndpoint: `${httpProtocol}:${baseUrl}/convivo/api/oauth/userinfo`,
   loginEndpoint: "http://localhost:5010/api/account/login",
+  registerEndpoint: "http://localhost:5010/api/account/register",
 };
 
 export { env };

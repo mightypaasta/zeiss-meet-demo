@@ -34,7 +34,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <MainView props={<Container />} />,
+    element: <MainView props={<Dashboard />} />,
   },
   {
     path: "/upcoming_meetings",

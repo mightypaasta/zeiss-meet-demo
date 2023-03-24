@@ -8,6 +8,7 @@
  */
 export default interface UserData {
   userId?: string;
+  name?: string;
   firstName?: string;
   lastName?: string;
   role?: string;

@@ -5,19 +5,21 @@ LICENSE file.
 import { useState } from "react";
 import "./register.css";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { getRegister } from "../../core/actioncreators/RegisterActionCreator";
 
 interface IState {
-  username: string;
+  name: string;
   email: string;
   password: string;
 }
 
 const Register: React.FC = () => {
-
+  let dispatch= useDispatch();
   let navigator=useNavigate();
 
   const [state, setState] = useState<IState>({
-    username: "",
+    name: "",
     email: "",
     password: "",
   });
@@ -37,7 +39,7 @@ const Register: React.FC = () => {
       ...state,
       [e.target.name]: e.target.value,
     });
-    if (e.target.name == "username"){
+    if (e.target.name == "name"){
        setShowUsernamePrompt(false);
        setUsernameInputToggle(false);
     }
@@ -52,7 +54,7 @@ const Register: React.FC = () => {
   };
 
   const clickHandler = () => {
-    if (state.username == "") {
+    if (state.name == "") {
       setShowUsernamePrompt(true);
       setUsernameInputToggle(true);
     }
@@ -64,7 +66,9 @@ const Register: React.FC = () => {
       setShowPasswordPrompt(true);
       setPasswordInputToggle(true);
     }
-    if(state.username.length>0 && state.email.length>0 && state.password.length>0){
+    if(state.name.length>0 && state.email.length>0 && state.password.length>0){
+      dispatch(getRegister(state));
+      
       navigator('/login');
     }
   };
@@ -93,8 +97,8 @@ const Register: React.FC = () => {
             }
             type="text"
             placeholder="username"
-            name="username"
-            value={state.username}
+            name="name"
+            value={state.name}
             onChange={updateHandler}
           />
           {showUsernamePrompt && (
